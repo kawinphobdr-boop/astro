@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astronomy Website</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#eef4ff;
+    line-height:1.6;
+}
+
+header{
+    background:#0b1f5e;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0b1f5e,#2563eb);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin:0;
+}
+
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:#f8faff;
+    padding:20px;
+    border-radius:12px;
+    border-left:5px solid #2563eb;
+}
+
+img{
+    border-radius:10px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    background:#0b1f5e;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.dark{
+    background:#111;
+    color:white;
+}
+
+.dark section{
+    background:#222;
+}
+
+.dark .card{
+    background:#333;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌌 Astronomy Website</h1>
+    <p>สำรวจความมหัศจรรย์ของเอกภพ</p>
+</header>
+
+<section class="hero">
+    <h1>ASTRONOMY</h1>
+    <p>สำรวจเอกภพอันกว้างใหญ่และความลับของจักรวาล</p>
+</section>
+
+<section>
+    <h2>ดาราศาสตร์คืออะไร</h2>
+    <p>
+        ดาราศาสตร์เป็นศาสตร์ที่ศึกษาเทหวัตถุในเอกภพ
+        เช่น ดาวฤกษ์ ดาวเคราะห์ กาแล็กซี และปรากฏการณ์ต่าง ๆ
+        ในอวกาศ
+    </p>
+</section>
+
+<section>
+    <h2>หัวข้อที่ฉันสนใจ</h2>
+
+<ul>
+    <li>🕳️ หลุมดำ (Black Hole)</li>
+    <li>🌠 พลังงานมืด (Dark Energy)</li>
+    <li>🌌 กาแล็กซีทางช้างเผือก</li>
+    <li>🪐 ดาวเคราะห์นอกระบบสุริยะ</li>
+</ul>
+
+</section>
+
+<section>
+    <h2>หัวข้อสำคัญทางดาราศาสตร์</h2>
+
+<div class="container">
+
+    <div class="card">
+        <h3>🌌 กาแล็กซี</h3>
+        <p>กลุ่มดาวฤกษ์จำนวนมหาศาลที่ถูกยึดเหนี่ยวด้วยแรงโน้มถ่วง</p>
+    </div>
+
+    <div class="card">
+        <h3>🕳️ หลุมดำ</h3>
+        <p>วัตถุที่มีแรงโน้มถ่วงรุนแรงจนแม้แต่แสงก็ไม่สามารถหนีออกมาได้</p>
+    </div>
+
+    <div class="card">
+        <h3>☀️ ดาวฤกษ์</h3>
+        <p>วัตถุที่สร้างพลังงานจากปฏิกิริยานิวเคลียร์ฟิวชัน</p>
+    </div>
+
+</div>
+
+</section>
+
+<section>
+    <h2>ภาพอวกาศ</h2>
+
+<img
+src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80"
+width="100%">
+
+<p>เครดิตภาพ: The Garden Astronomer – NGC 7635 (Bubble Nebula),
+โดย Wayne McGraw</p>
+
+</section>
+
+<section>
+    <h2>ข้อมูลน่าสนใจ</h2>
+
+<ul>
+    <li>อายุเอกภพ ≈ 13.8 พันล้านปี</li>
+    <li>ทางช้างเผือกมีดาวฤกษ์มากกว่า 100,000 ล้านดวง</li>
+    <li>แสงจากดวงอาทิตย์ใช้เวลาประมาณ 8 นาทีถึงโลก</li>
+    <li>ระบบสุริยะมีดาวเคราะห์ 8 ดวง</li>
+</ul>
+
+</section>
+
+<section>
+    <h2>ข้อมูลเพิ่มเติม</h2>
+
+<button onclick="showText()">
+    แสดง/ซ่อนข้อมูล
+</button>
+
+<p id="extra" style="display:none;">
+    สสารปกติที่เรามองเห็นคิดเป็นเพียงประมาณ 5% ของเอกภพเท่านั้น
+</p>
+
+</section>
+
+<section>
+    <h2>แบบทดสอบสั้น ๆ</h2>
+
+<p>ดาวฤกษ์ที่อยู่ใกล้โลกที่สุดคืออะไร?</p>
+
+<button onclick="answer()">
+    เฉลย
+</button>
+
+<p id="quiz"></p>
+
+</section>
+
+<section>
+    <button onclick="darkMode()">
+        🌙 เปลี่ยนโหมดสี
+    </button>
+</section>
+
+<section>
+    <h2>ผู้จัดทำ</h2>
+
+<p>ชื่อ-สกุล : กวินภพ ดิษสุนรัตน์ </p>
+<p>ชั้น : ม.6/3 </p>
+<p>เลขที่ : 9 </p>
+
+</section>
+
+<footer>
+    <h3>Astronomy Website</h3>
+    <p>แหล่งข้อมูล: NASA, ESA, Wikipedia</p>
+</footer>
+
+<script>
+function showText(){
+    let text = document.getElementById("extra");
+
+    if(text.style.display === "none"){
+        text.style.display = "block";
+    }else{
+        text.style.display = "none";
+    }
+}
+
+function answer(){
+    document.getElementById("quiz").innerHTML =
+    "☀️ คำตอบ: ดวงอาทิตย์";
+}
+
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
